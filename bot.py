@@ -1876,7 +1876,7 @@ def conectame4(m):
     jugando4 = True
     
     # Generamos los equipos
-    jugadores4 = ["lmontesn","Telefonillo","DameYoPido","Gazpacho","ThomasTens","Jaimeorro","Apodaco","cloco46", "jabujavi"]
+    jugadores4 = ["lmontesn","DameYoPido", "Telefonillo","Gazpacho","ThomasTens","Jaimeorro","Apodaco","cloco46", "jabujavi"]
     aux = True
     while len(jugadores4) != 0:
         num = random.randrange(0, len(jugadores4))
