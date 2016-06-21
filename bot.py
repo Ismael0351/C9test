@@ -176,7 +176,7 @@ def execute_mongo():
             isMongo=True    
     if isMongo==False:
         print "Executing Mongo"
-        mongo=subprocess.Popen(['mongod', '--smallfiles'], stdout=subprocess.PIPE)
+        mongo=subprocess.Popen(['sudo','mongod', '--smallfiles'], stdout=subprocess.PIPE)
         print "Mongo has been executed"
     else:
         print "Mongo is executed yet"
@@ -1874,6 +1874,7 @@ def conectame4(m):
     equipo_amarillo4 = []
     mensaje_id_conectame4=""
     jugando4 = True
+    
     
     # Generamos los equipos
     jugadores4 = ["lmontesn","DameYoPido", "Telefonillo","Gazpacho","ThomasTens","Jaimeorro","Apodaco","cloco46", "jabujavi"]
