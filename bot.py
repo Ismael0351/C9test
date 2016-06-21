@@ -176,7 +176,7 @@ def execute_mongo():
             isMongo=True    
     if isMongo==False:
         print "Executing Mongo"
-        mongo=subprocess.Popen(['sudo','mongod', '--smallfiles'], stdout=subprocess.PIPE)
+        mongo=subprocess.Popen(['sudo', 'mongod', '--smallfiles'], stdout=subprocess.PIPE)
         print "Mongo has been executed"
     else:
         print "Mongo is executed yet"
