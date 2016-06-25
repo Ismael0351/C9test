@@ -39,8 +39,8 @@ from images2gif import writeGif
 
 reload(sys) 
 sys.setdefaultencoding("utf-8")
-
-TOKEN = '190597061:AAGVYMme_ok6By3jZkEaFzj6_8ypc2zn4-8' # Nuestro tokken del bot (el que @BotFather nos dió).
+data=open('token')
+TOKEN = data.read() # Nuestro tokken del bot (el que @BotFather nos dió).
 global usuarios
 #usuarios = [line.rstrip('\n') for line in open('usuarios.txt')] # Cargamos la lista de usuarios.
 usuarios=[]
